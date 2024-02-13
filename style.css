@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  border: 1px solid black;
+  display: flex;
+  width: 50%;
+}
+
+input {
+  padding: 10px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 40px;
+  background-color: indianred;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+/* // agent section  */
+
+.agent__info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 10px;
+}
+
+.agent__img {
+  background-color: #fa4454;
+  background-image: url("https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/background.png");
+  background-size: cover;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 5rem;
+  color: #fa4454;
+  margin-bottom: 40px;
+}
+
+
+
+.agent__disc {
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.slot {
+  background-color: #fa4454;
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.slot div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.slot figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slot figure {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .search {
+    width: 100%;
+  }
+
+  input {
+    width: 50%;
+  }
+  button {
+    width: 50%;
+  }
+}
